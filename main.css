@@ -1,0 +1,95 @@
+
+h1, h2, h3 {
+    color: #28a745;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.intro {
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h1 {
+    margin-bottom: 20px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* Featured Recipes Section */
+.featured-recipes {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featured-recipes h2 {
+    margin-bottom: 30px;
+}
+
+.recipe-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.recipe-card .btn {
+    padding: 10px 20px;
+    background-color: rgb(47, 255, 47); 
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-card .btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+

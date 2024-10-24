@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Recipes</title>
+    <link rel="stylesheet" href="breakfast.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="main.html">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                   
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                       
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+    <hr>
+
+    <section class="collage">
+        <img src="veg_images/v1.jpg" alt="Vegetarian Dish 1">
+        <img src="veg_images/v2.jpg" alt="Vegetarian Dish 2">
+        <img src="veg_images/v3.jpg" alt="Vegetarian Dish 3">
+    </section>
+    <section class="content">
+        <h1>Breakfast Recipes</h1>
+        <p>Start your day off right with delicious and healthy breakfast recipes! From hearty oatmeal to light smoothies, our breakfast recipes are designed to give you the energy you need to tackle the day ahead.</p>
+        <p>Whether you're looking for something quick and easy or a more elaborate weekend brunch, you'll find a variety of options here to satisfy your taste buds.</p>
+    </section>
+    <section class="breakfast-recipes">
+
+        <!-- 2 Rows of 4 Smaller Tiles -->
+        <div class="small-tiles">
+            <div class="small-tile">
+                <img src="breakfast_images/bananasmoothie.jpg" alt="Sample Breakfast 4" class="recipe-img">
+                <h3>Banana Smoothie</h3>
+                <p>A refreshing smoothie made with bananas, yogurt, and honey.</p>
+                <a href="bananaSmoothie_recipe.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/oatmealwithberries.jpeg" alt="Sample Breakfast 5" class="recipe-img">
+                <h3>Oatmeal with Berries</h3>
+                <p>Heart-healthy oatmeal topped with fresh berries and almonds.</p>
+                <a href="Oatmeal with Berries.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/greenyogurtbowl.jpg" alt="Sample Breakfast 6" class="recipe-img">
+                <h3>Greek Yogurt Bowl</h3>
+                <p>Protein-packed Greek yogurt with granola and honey drizzle.</p>
+                <a href="Greek Yogurt Bowl.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/frenchtost.jpeg" alt="Sample Breakfast 7" class="recipe-img">
+                <h3>French Toast</h3>
+                <p>Classic French toast with cinnamon and a dusting of powdered sugar.</p>
+                <a href="French Toast.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="small-tile">
+                <img src="breakfast_images/breakfastburritos.jpeg" alt="Sample Breakfast 8" class="recipe-img">
+                <h3>Breakfast Burrito</h3>
+                <p>A filling burrito packed with eggs, cheese, and salsa.</p>
+                <a href="Breakfast Burrito.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/Chia-Pudding-main.webp" alt="Sample Breakfast 9" class="recipe-img">
+                <h3>Chia Seed Pudding</h3>
+                <p>Creamy chia seed pudding topped with fruits and nuts.</p>
+                <a href="Chia Seed Pudding.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/scrambbled egg.jpg" alt="Sample Breakfast 10" class="recipe-img">
+                <h3>Scrambled Eggs</h3>
+                <p>Perfectly scrambled eggs with a dash of cream and chives.</p>
+                <a href="Scrambled Eggs.html" class="btn">View Recipe</a>
+            </div>
+            <div class="small-tile">
+                <img src="breakfast_images/istockphoto-1298159858-612x612.jpg" alt="Sample Breakfast 11" class="recipe-img">
+                <h3>Smoothie Bowl</h3>
+                <p>A thick smoothie topped with granola, seeds, and fresh fruits.</p>
+                <a href="Smoothie Bowl.html" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2024 InstantEats. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for dropdown -->
+    <script>
+        function navigate(selectElement) {
+            const url = selectElement.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>

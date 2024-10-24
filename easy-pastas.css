@@ -1,0 +1,122 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #28a745; /* Green theme */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.easy-pasta {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.easy-pasta h1 {
+    font-size: 2.5rem;
+    color: #2d7a2f;
+    margin-bottom: 20px;
+}
+
+.easy-pasta h2, .easy-pasta h3 {
+    color: #2d7a2f;
+    margin-bottom: 15px;
+}
+
+.easy-pasta p, .easy-pasta ul, .easy-pasta ol {
+    margin: 10px auto;
+    font-size: 1.1rem;
+    max-width: 800px;
+    color: #333;
+}
+
+/* Collage Section */
+.pasta-collage {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.collage-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Pasta Recipe Tiles */
+.pasta-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.pasta-tile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.pasta-tile:hover {
+    transform: scale(1.05);
+}
+
+.pasta-tile img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recipe-img {
+    border-radius: 8px;
+}
+
+.pasta-tile h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.pasta-tile p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.pasta-tile .btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pasta-tile .btn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

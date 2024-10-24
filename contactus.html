@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFlow - Contact</title>
+    <link rel="icon" href="Designer.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Notable&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+}
+nav{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(plain-white-background-3qzwpiavktxg11pr.jpg);
+    background-size: cover;
+    /* background-color: black; */
+    background-position: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.container{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(25px);
+    color: rgb(0, 0, 0);
+    border-radius: 12px;
+    padding: 25px 35px;
+    margin: 0 30px;
+    
+}
+.container h1{
+    text-align: center;
+    font-size: 38px;
+    animation: glow 2.5s ease-in-out infinite;
+}
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* background: bisque; */
+    margin: 30px 0;
+    transition: transform 0.2s ease-in-out;
+}
+.container .input-box-2{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    /* background: bisque; */
+    margin: 30px 0;
+    transition: transform 0.2s ease-in-out;
+}
+.container .input-box:hover{
+    transform: scale(1.05);
+}
+.container .input-box-2:hover{
+    transform: scale(1.05);
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+.input-box-2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+.input-box-2 textarea{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+    overflow-y: hidden;
+}
+
+.input-box-2 ::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.input-box input::placeholder{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+}
+
+.container .btn{
+    width: 100%;
+    height: 47px;
+    background: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    /* transition: transform 0.3s ease-in; */
+    transition: box-shadow 0.25s ease-in-out;
+}
+.container .btn:hover{
+    /* transform: scale(1.02); */
+    box-shadow: 0 0 3px 1.5px rgb(51, 44, 44);
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+</style>
+<body> 
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+    <div class="container">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="db1f61d3-aa9a-41f1-be40-542d0ac61e2e">
+            <h1>Contact Developer</h1>
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Name" required>
+                <i class='bx bx-user'></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" name="email" placeholder="Your Email" required>
+                <i class='bx bx-envelope'></i>
+            </div>
+            <div class="input-box-2">
+                <textarea name="message" placeholder="Write message " required></textarea>
+            </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+<script>
+    function navigate(selectElement) {
+        const url = selectElement.value;
+        if (url) {
+            window.location.href = url; // Redirect to the selected page
+        }
+    }
+</script>
+</html>

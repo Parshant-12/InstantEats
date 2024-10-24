@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Recipes - Home</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="icon" href="logo for recipes website.png">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+    <hr>
+
+    <!-- Introduction Section -->
+    <section class="intro">
+        <h1>Welcome to InstantEats!</h1>
+        <p>Explore our collection of quick and easy recipes that are perfect for busy lifestyles. Whether you're looking for a healthy breakfast, a hearty dinner, or a sweet treat, we have something for everyone.</p>
+        <p>Our carefully curated recipes are designed to save you time in the kitchen without compromising on flavor. Start exploring and enjoy delicious homemade meals in no time!</p>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="featured-recipes">
+        <h2>Featured Recipes</h2>
+        <div class="recipe-cards">
+            <div class="recipe-card">
+                <img src="breakfast_bowl.jpg" alt="Breakfast Recipe" class="recipe-img">
+                <h3>Quick Breakfast Bowl</h3>
+                <p>A healthy and filling breakfast made with oats, fresh fruits, and a drizzle of honey. Ready in just 10 minutes!</p>
+                <a href="breakfast.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="pasta.jpeg" alt="Pasta Recipe" class="recipe-img">
+                <h3>Easy Veggie Pasta</h3>
+                <p>This quick pasta dish with seasonal vegetables and a light tomato sauce is a family favorite. Ready in 20 minutes!</p>
+                <a href="easy-pastas.html" class="btn">View Recipe</a>
+            </div>
+
+            <div class="recipe-card">
+                <img src="veg_images/Vegetable-Stir-Fry-2.jpg" alt="Vegetarian Stir Fry" class="dish-image">
+                <div class="dish-info">
+                    <h3>Vegetarian Stir Fry</h3>
+                    <p>A colorful and healthy stir fry packed with fresh vegetables and tofu, seasoned with soy sauce and garlic.</p>
+                    <a href="quick-vegetarian.html" class="btn">View Recipe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer style="line-height: 3vh;">
+        Developers:- 
+        <br>
+        Parshant_2338020
+        <br>
+        Rohit Pal_2338025
+        <br>
+        Shruti_2338029
+        <p>&copy; 2024 InstantEats. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for handling dropdown navigation -->
+    <script>
+        function navigate(selectElement) {
+            const url = selectElement.value;
+            if (url) {
+                window.location.href = url; // Redirect to the selected page
+            }
+        }
+    </script>
+</body>
+</html>

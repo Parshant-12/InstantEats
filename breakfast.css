@@ -1,0 +1,166 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #28a745; /* Green theme */
+    text-align: center;
+}
+h1 {
+    color: #28a745; /* Green theme */
+    text-align: center;
+    font-size: 3rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.content {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #4dff47; /* Tomato */
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+.collage {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.collage img {
+    width: 30%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Big Tiles Section */
+.big-tiles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.big-tile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.big-tile:hover {
+    transform: scale(1.05);
+}
+
+.big-tile img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Small Tiles Section */
+.small-tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.small-tile {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+
+.small-tile:hover {
+    transform: scale(1.05);
+}
+
+.small-tile img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.recipe-img {
+    border-radius: 8px;
+}
+
+.recipe-tile h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.recipe-tile p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.recipe-tile .btn {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-tile .btn:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: rgb(47, 255, 47); 
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.btn:hover {
+    background-color: rgb(40, 167, 69);
+    box-shadow: 0 0 25px rgba(47, 255, 47, 0.8);
+}

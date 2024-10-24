@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Pastas</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="easy-pastas.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+    <hr>
+
+    <section class="easy-pasta">
+        <h1>Easy Pasta Recipes</h1>
+
+        <!-- Collage of Pasta Images -->
+        <div class="pasta-collage">
+            <div class="collage-item"><img src="pasta_images/pasta1.jpg" alt="Pasta Image 1"></div>
+            <div class="collage-item"><img src="pasta_images/pasta3.jpeg" alt="Pasta Image 2"></div>
+            <div class="collage-item"><img src="pasta_images/pasta3.avif" alt="Pasta Image 3"></div>
+        </div>
+
+        <div class="pasta-content">
+            <h2>Welcome to Easy Pastas!</h2>
+            <p>Craving something delicious but don’t have hours to spend in the kitchen? You’re in the right place! Our collection of <strong>Easy Pasta Recipes</strong> will satisfy your cravings without the hassle. Whether you’re a pasta pro or just looking to whip up something quick, these recipes are designed to bring rich flavors and comfort to your table in no time.</p>
+
+            <p>From creamy alfredo sauces to spicy tomato-based classics, pasta is versatile, comforting, and always a crowd-pleaser. And the best part? You don’t need a lot of fancy ingredients—just a love for simple, delicious food!</p>
+
+            <h3>Why We Love Pasta</h3>
+            <ul>
+                <li><strong>Quick to Make:</strong> Most pasta dishes take under 30 minutes to prepare, perfect for busy weeknights or lazy weekends.</li>
+                <li><strong>Endless Variety:</strong> Whether you’re into penne, fettuccine, or spaghetti, pasta pairs with almost any sauce, from creamy to spicy.</li>
+                <li><strong>Budget-Friendly:</strong> With just a few pantry staples, you can create a gourmet dish at home without breaking the bank.</li>
+            </ul>
+
+            <h3>Top Easy Pasta Recipes</h3>
+            <ol>
+                <li><strong>Spaghetti Aglio e Olio</strong> - A simple, yet delicious classic made with garlic, olive oil, and chili flakes. This Italian favorite is ready in under 20 minutes!</li>
+                <li><strong>Creamy Alfredo Pasta</strong> - Dreamy, creamy, and comforting! This fettuccine alfredo recipe will quickly become a go-to for pasta lovers everywhere.</li>
+                <li><strong>Penne Arrabbiata</strong> - Like a bit of heat? This penne in a spicy tomato-based sauce is for you. Fresh basil adds a nice touch to this fiery dish.</li>
+            </ol>
+        </div>
+
+        <!-- 4 Recipe Tiles -->
+        <div class="pasta-tiles">
+            <div class="pasta-tile">
+                <img src="pasta_images/Spaghetti Aglio e Olio.jpeg" alt="Pasta Recipe 1" class="recipe-img">
+                <h3>Spaghetti Aglio e Olio</h3>
+                <p>Simple spaghetti with garlic, olive oil, and chili flakes.</p>
+                <a href="Spaghetti Aglio e Olio.html" class="btn">View Recipe</a>
+            </div>
+            <div class="pasta-tile">
+                <img src="pasta_images/Creamy Alfredo Pasta.jpeg" alt="Pasta Recipe 2" class="recipe-img">
+                <h3>Creamy Alfredo Pasta</h3>
+                <p>Rich and creamy fettuccine alfredo with parmesan cheese.</p>
+                <a href="Creamy Alfredo Pasta.html" class="btn">View Recipe</a>
+            </div>
+            <div class="pasta-tile">
+                <img src="pasta_images/Penne Arrabbiata.jpg" alt="Pasta Recipe 3" class="recipe-img">
+                <h3>Penne Arrabbiata</h3>
+                <p>Penne pasta in a spicy tomato-based sauce with fresh basil.</p>
+                <a href="Penne Arrabbiata.html" class="btn">View Recipe</a>
+            </div>
+            <div class="pasta-tile">
+                <img src="pasta_images/Mac and Cheese.jpeg" alt="Pasta Recipe 4" class="recipe-img">
+                <h3>Mac and Cheese</h3>
+                <p>Classic mac and cheese with a creamy, cheesy sauce.</p>
+                <a href="Mac and Cheese.html" class="btn">View Recipe</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2024 InstantEats. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for dropdown -->
+    <script>
+        function navigate(selectElement) {
+            const url = selectElement.value;
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Tips</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navbar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #2d7a2f; /* Tomato color on hover */
+        }
+
+        .btn {
+            background-color: #2d7a2f; /* Tomato */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #FF4500; /* Darker tomato on hover */
+        }
+
+        /* Content Section */
+        .content {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #2d7a2f; /* Tomato */
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Image Section */
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <!-- Hero Image -->
+    <img src="tips_images/photo-1556911220-bff31c812dba.jpeg" alt="Kitchen Tips" class="hero-image">
+
+    <!-- Content Section -->
+    <section class="content">
+        <h1>Essential Kitchen Tips</h1>
+        <p>Welcome to our kitchen tips section! Here you'll find a collection of handy tips and tricks to make your cooking experience easier, more enjoyable, and efficient.</p>
+        
+        <h2>1. Keep Your Knives Sharp</h2>
+        <p>Sharp knives not only make cutting easier, but they are also safer to use. Dull knives require more force and can slip, leading to accidents.</p>
+
+        <h2>2. Organize Your Workspace</h2>
+        <p>A clutter-free workspace helps you stay focused and efficient. Keep your most-used utensils and ingredients within reach.</p>
+
+        <h2>3. Taste as You Cook</h2>
+        <p>Tasting your food as you go ensures the flavors are balanced and allows you to adjust seasonings for the best results.</p>
+
+        <h2>4. Clean as You Go</h2>
+        <p>Cleaning up while you cook prevents a massive mess at the end and makes the cooking process more enjoyable.</p>
+
+        <h2>5. Use Fresh Ingredients</h2>
+        <p>Using fresh ingredients can elevate the taste of your dishes. Whenever possible, choose seasonal produce for the best flavor.</p>
+    </section>
+
+</body>
+<script>
+    function navigate(selectElement) {
+        const url = selectElement.value;
+        if (url) {
+            window.location.href = url; // Redirect to the selected page
+        }
+    }
+</script>
+</html>

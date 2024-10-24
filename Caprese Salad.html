@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Smoothie</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+
+        nav ul li a:hover {
+            color: #2ECC71; /* Light Green on hover */
+        }
+
+        .btn {
+            background-color: #27AE60; /* Green */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background-color: #2ECC71; /* Lighter green on hover */
+        }
+
+        /* Recipe Header */
+        .recipe-header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .recipe-header h1 {
+            font-size: 2.5rem;
+            color: #27AE60; /* Green */
+            margin-bottom: 10px;
+        }
+
+        .recipe-header p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Recipe Image */
+        .recipe-image {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Recipe Content */
+        .recipe-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .recipe-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #27AE60;
+        }
+
+        .recipe-content ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .recipe-content ul li {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .recipe-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="left">
+            <ul>
+                <li>
+                    <img src="logo for recipes website.png" height="75" style="border-radius: 15px;">
+                    <a href="main.html">InstantEats</a>
+                </li>
+                <li>
+                    <select id="recipes" name="Recipes" onchange="navigate(this)">
+                        <option value="main.html">Recipes</option>
+                        <option value="breakfast.html">Breakfast</option>
+                        <option value="lunch.html">Lunch</option>
+                        <option value="dinner.html">Dinner</option>
+                   
+                    </select>
+                </li>
+                <li>
+                    <select id="quick-easy" name="Quick & Easy" onchange="navigate(this)">
+                        <option value="">Quick & Easy</option>
+                        <option value="easy-pastas.html">Easy Pastas</option>
+                        <option value="quick-vegetarian.html">Quick Vegetarian</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="in-kitchen" name="In the Kitchen" onchange="navigate(this)">
+                        <option value="">In the Kitchen</option>
+                        <option value="tips.html">Tips & Techniques</option>
+                        <option value="guides.html">Ingredient Guides</option>
+                    </select>
+                </li>
+                <li>
+                    <select id="holidays" name="Holidays & Seasons" onchange="navigate(this)">
+                        <option value="">Holidays & Seasons</option>
+                        <option value="fall-recipes.html">Recipes To Welcome Fall</option>
+                       
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="btn"><a href="contactus.html">CONTACT US</a></div>
+        </div>
+    </nav>
+
+    <hr>
+
+    <!-- Recipe Header -->
+<div class="recipe-header">
+    <h1>Caprese Salad</h1>
+    <p>A fresh and vibrant Italian salad made with ripe tomatoes, mozzarella, basil, and a drizzle of balsamic glaze.</p>
+</div>
+
+<!-- Recipe Content -->
+<div class="recipe-content">
+    <h2>Ingredients</h2>
+    <ul>
+        <li>4 ripe tomatoes, sliced</li>
+        <li>200g fresh mozzarella cheese, sliced</li>
+        <li>Fresh basil leaves</li>
+        <li>3 tablespoons extra virgin olive oil</li>
+        <li>2 tablespoons balsamic glaze</li>
+        <li>Salt and pepper, to taste</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <p>1. On a large serving platter, alternate layers of sliced tomatoes and mozzarella cheese.</p>
+    <p>2. Tuck fresh basil leaves between the layers of tomato and cheese.</p>
+    <p>3. Drizzle the extra virgin olive oil and balsamic glaze over the salad.</p>
+    <p>4. Season with salt and pepper to taste.</p>
+    <p>5. Serve immediately as a refreshing appetizer or side dish. Enjoy your Caprese Salad!</p>
+</div>
+
+
+
+</body>
+<script>
+    function navigate(selectElement) {
+        const url = selectElement.value;
+        if (url) {
+            window.location.href = url;
+        }
+    }
+</script>
+</html>
